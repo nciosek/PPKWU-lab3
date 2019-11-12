@@ -38,10 +38,8 @@ public class WeeiaEventService {
         }
         File calendarFile = new File(month + ".ics");
         Biweekly.write(calendar).go(calendarFile);
-
         return new FileSystemResource(calendarFile);
     }
-
 
     public  List<WeeiaEvent> getWeeiaEvents(String websiteContent){
         String[] splitted = websiteContent.split("href=\"javascript:void\\(\\);\">");
@@ -63,12 +61,11 @@ public class WeeiaEventService {
 
     public static String getWebsiteHTML(String website){
         try {
-
             URL url = new URL(website);
             BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
 
             String inputLine;
-            String returnString = "";
+            String returnString = " ";
 
             while ((inputLine = in.readLine()) != null)
                 returnString += inputLine;
@@ -79,7 +76,7 @@ public class WeeiaEventService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "";
+        return " ";
     }
 
     public String fixStringFormat(String str) {

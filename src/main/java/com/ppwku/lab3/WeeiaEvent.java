@@ -12,7 +12,7 @@ public class WeeiaEvent {
 
     @Override
     public String toString() {
-        return "["+eventDay+" "+eventName+"]";
+        return "[" + eventDay + " " + eventName + "]";
     }
 
     public String getEventName() {

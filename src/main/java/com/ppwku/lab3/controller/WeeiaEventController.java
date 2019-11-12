@@ -35,7 +35,6 @@ public class WeeiaEventController {
         return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType("text/calendar"))
                 .body(fileSystemResource);
-
     }
 
 }

@@ -302,7 +302,6 @@ public class Utils {
                             replaced = true;
                         }
                     } catch (NumberFormatException ex) {
-                        // Failed, not replaced.
                     }
 
                 } else {
@@ -317,7 +316,6 @@ public class Utils {
             }
 
             if (!replaced) {
-                // Not a recognized escape sequence, leave as-is
                 System.arraycopy(chars, i, escaped, pos, j - i);
                 pos += j - i;
             }
