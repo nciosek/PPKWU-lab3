@@ -13,6 +13,11 @@ API generuje kalendarz w formacie ICS/iCal dla kalendarza ze strony http://www.w
 
 ## Przykład użycia
 ```
-http://http://localhost:8080/weeiaCalendar/2019/11
+  http://http://localhost:8080/weeiaCalendar/2019/11
 ```
-W odpowiedzi dostaniemy plik w formacie ".ics" dla listopada z wydarzeniami w ciągu tego miesiąca.
+W odpowiedzi dostaniemy plik w formacie ".ics" dla listopada 2019 roku z wydarzeniami w ciągu tego miesiąca.
+
+```
+  http://http://localhost:8080/weeiaCalendar/2019/12
+```
+W odpowiedzi dostaniemy plik w formacie ".ics" dla grudnia 2019 roku z wydarzeniami w ciągu tego miesiąca.
