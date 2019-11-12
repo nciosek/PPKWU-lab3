@@ -1,4 +1,4 @@
-package com.ppwku.lab3;
+package com.ppwku.lab3.service;
 
 import java.util.HashMap;
 import java.util.Map;

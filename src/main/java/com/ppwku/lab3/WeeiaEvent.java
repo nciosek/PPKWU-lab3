@@ -1,11 +1,11 @@
 package com.ppwku.lab3;
 
-public class EventWeeia {
+public class WeeiaEvent {
 
     private String eventName;
     private String eventDay;
 
-    EventWeeia(String eventName, String eventDay){
+    public WeeiaEvent(String eventName, String eventDay){
         this.eventDay = eventDay;
         this.eventName = eventName;
     }
