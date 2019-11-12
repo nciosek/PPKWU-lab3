@@ -8,3 +8,9 @@ API generuje kalendarz w formacie ICS/iCal dla kalendarza ze strony http://www.w
 | Metoda | Ścieżka                     | Parametr         | Opis                                                             |
 |--------|-----------------------------|------------------|------------------------------------------------------------------|
 | GET    | /weeiaCalendar/             | {year}/{month}   | Zwraca kalendarz w formacie ics z wydarzeniami z danego miesiąca |
+
+##Przykład użycia
+```
+http://http://localhost:8080/weeiaCalendar/2019/11
+```
+W odpowiedzi dostaniemy plik w formacie ".ics" dla listopada z wydarzeniami w ciągu tego miesiąca.
